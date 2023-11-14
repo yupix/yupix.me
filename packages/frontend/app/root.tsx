@@ -13,10 +13,7 @@ import { Navbar } from "./components/NavBar";
 import { Container } from "./components/Container";
 import { Spacer } from "./components/Spacer";
 
-export const links: LinksFunction = () => [
-];
-
-
+export const links: LinksFunction = () => [];
 
 export default function App() {
   return (
@@ -31,10 +28,10 @@ export default function App() {
         <header className="p-4 border-b sticky top-0 bg-white dark:bg-base-100">
           <Navbar />
         </header>
-        <Container>
+        <div className="mx-[10vw]">
           <Spacer size="2xs" />
           <Outlet />
-        </Container>
+        </div>
         <ScrollRestoration />
         <LiveReload />
         <Scripts />
